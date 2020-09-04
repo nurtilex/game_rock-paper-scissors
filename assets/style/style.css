@@ -1,0 +1,89 @@
+:root {
+  font-size: 16px;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 150px;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.computer-choice {
+  width: 150px;
+  height: 150px;
+  border: 3px solid lightgreen;
+  border-radius: 50%;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 10px 10px 10px 10px;
+}
+
+.question-rotating-animation-class {
+  -webkit-animation: question-rotating 1s ease-in-out;
+          animation: question-rotating 1s ease-in-out;
+}
+
+.gamer-choices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  gap: 15px;
+  width: 350px;
+  height: auto;
+}
+
+.gamer-choices .gamer-choice {
+  width: 150px;
+  height: 150px;
+  border: 3px solid lightgreen;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: white;
+  padding: 10px;
+}
+
+.gamer-choices .gamer-choice:focus {
+  outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.gamer-choices .gamer-choice:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@-webkit-keyframes question-rotating {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes question-rotating {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */

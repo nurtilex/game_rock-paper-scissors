@@ -1,0 +1,54 @@
+:root {
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.computer-choice {
+    width: 150px;
+    height: 150px;
+    border: 3px solid lightgreen;
+    border-radius: 50%;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 10px 10px 10px 10px;
+}
+.question-rotating-animation-class {
+    animation: question-rotating 1s ease-in-out;
+}
+.gamer-choices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 15px;
+    width: 350px;
+    height: auto;
+
+    .gamer-choice {
+        width: 150px;
+        height: 150px;
+        border: 3px solid lightgreen;
+        border-radius: 50%;
+        overflow: hidden;
+        cursor: pointer;
+        background-color: white;
+        padding: 10px;
+
+        &:focus { outline: none; user-select: none; }
+        &:active { transform: scale(1.1); }
+    }
+
+}
+
+@keyframes question-rotating {
+    to {transform: rotate(360deg);}
+}
