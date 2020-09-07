@@ -4,24 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="assets/style/reset.css">
     <link rel="stylesheet" href="assets/style/style.css">
 </head>
 <body>
-    <div class="score-wrap">
-        <div class="computer-score">0</div>
-        <div class="draw-score">0</div>
-        <div class="gamer-score">0</div>
-    </div>
+    <button class="restart" type="button">Restart</button>
+    <section class="score-wrap">
+        <div class="score-item computer-score">0</div>
+        <div class="score-item draw-score">0</div>
+        <div class="score-item gamer-score">0</div>
+    </section>
     
-    <div class="gameplay">
-        <div class="computer-choice"></div>
-        <div class="gamer-choices">
-            <button class="gamer-choice rock"></button>
-            <button class="gamer-choice paper"></button>
-            <button class="gamer-choice scissors"></button>
+    <section class="gameplay">
+        <div class="computer-choice-wrap">
+            <div class="computer-choice" data-value="default"></div>
         </div>
+        <div class="gamer-choices">
+            <button class="gamer-choice rock" data-value="rock" type="button"></button>
+            <button class="gamer-choice paper" data-value="paper" type="button"></button>
+            <button class="gamer-choice scissors" data-value="scissors" type="button"></button>
+        </div>
+    </section>
 
-    </div>
     <script defer src="assets/js/index.js"></script>
 </body>
 </html>
